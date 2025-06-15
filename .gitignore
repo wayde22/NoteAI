@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.flaskenv
+
+# Streamlit specific
+.streamlit/local_share/
+
+# Qdrant data (local persistent storage)
+qdrant_data/ 
