@@ -192,7 +192,7 @@ def main():
             help="Number of previous messages to remember"
         )
         
-        if st.button("Clear Memory"):
+        if st.button("Clear Chat"):
             openai_service.clear_history()
             st.session_state.chat_history = []
             st.session_state.last_query_relevant_notes = [] # Clear relevant notes from display when memory is cleared
@@ -249,7 +249,7 @@ def main():
                 indexer.incremental_index()
             st.success("Incremental indexing complete!")
             
-        if st.button("Clear Index"):
+        if st.button("Clear Vector Index"):
             if st.checkbox("I'm sure I want to clear the index"):
                 vector_store.clear_collection()
                 st.session_state.last_query_relevant_notes = [] # Clear relevant notes from display
