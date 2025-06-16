@@ -20,10 +20,25 @@ venv/
 
 # Environment variables
 .env
+.env.*
+*.pem
+*.key
 .flaskenv
 
 # Streamlit specific
 .streamlit/local_share/
 
+
 # Qdrant data (local persistent storage)
-qdrant_data/ 
+qdrant_data/
+qdrant_data/
+**/qdrant_data/ 
+
+# Database and data files
+*.db
+*.sqlite
+*.sqlite3
+
+# Local configuration
+config.local.json
+settings.local.json
